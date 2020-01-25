@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TP1</string>
+    <string name="dany_ross">Dany Ross</string>
+    <string name="site_web">Site Web (ext)</string>
+    <string name="site_web_wv">Site Web (wv)</string>
+    <string name="ulaval">Ulaval</string>
+    <string name="mon_profil">Mon Profil</string>
 </resources>
