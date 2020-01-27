@@ -5,4 +5,9 @@
     <string name="site_web_wv">Site Web (wv)</string>
     <string name="ulaval">Ulaval</string>
     <string name="mon_profil">Mon Profil</string>
+    <string name="fermer">Fermer</string>
+    <string name="myURLUlaval">https://monportail.ulaval.ca</string>
+    <string name="title_activity_ulaval">UlavalActivity</string>
+    <string name="UlavalActivity">ulavalActivity</string>
+    <string name="title_activity_internal_browser">InternalBrowser</string>
 </resources>

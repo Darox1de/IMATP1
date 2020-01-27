@@ -26,9 +26,10 @@
         android:layout_marginTop="66dp"
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
+        android:onClick="openBrowser"
         android:text="@string/site_web"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -41,8 +42,10 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
+        android:onClick="openLinkInApp"
         android:text="@string/site_web_wv"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -55,8 +58,10 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
+        android:onClick="openRedPage"
         android:text="@string/ulaval"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
@@ -71,6 +76,7 @@
         android:layout_marginRight="160dp"
         android:text="@string/mon_profil"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
