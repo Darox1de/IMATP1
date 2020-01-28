@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ProfilDescription"
+            android:label="@string/title_activity_profil_description"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".InternalBrowser"
             android:label="@string/title_activity_internal_browser"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".UlavalActivity"
             android:label="@string/title_activity_ulaval"

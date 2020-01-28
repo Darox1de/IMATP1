@@ -10,4 +10,9 @@
     <string name="title_activity_ulaval">UlavalActivity</string>
     <string name="UlavalActivity">ulavalActivity</string>
     <string name="title_activity_internal_browser">InternalBrowser</string>
+    <string name="title_activity_profil_description">ProfilDescription</string>
+    <string name="First_Name">Prénom:</string>
+    <string name="Last_Name">Nom de famille:</string>
+    <string name="Date_de_naissance">Date de naissance:</string>
+    <string name="IDUL">IDUL:</string>
 </resources>
