@@ -9,17 +9,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.Arrays;
-
 public class MainActivity extends AppCompatActivity {
 
-    private Profil dude;
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dude = new Profil("Ross", "Dany", Arrays.asList(1995,8,20),"DAROS40");
     }
 
     public void openBrowser(View v) {
@@ -38,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openProfilDescription(View v) {
+
+
+        Profil dude = new Profil("Ross", "Dany",633916800000L,"DAROS40");
         Intent intent = new Intent(this, ProfilDescription.class);
         intent.putExtra("user", dude);
         startActivity(intent);

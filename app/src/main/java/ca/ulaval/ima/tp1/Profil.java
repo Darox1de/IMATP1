@@ -4,40 +4,70 @@ package ca.ulaval.ima.tp1;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.List;
 
 public class Profil implements Parcelable {
-    public Profil(String name, String firstName, List birthDate, String IDUL) {
 
-        this.name = name;
-        this.firstName = firstName;
-        this.birthDate = birthDate;
-        this.IDUL = IDUL;
-    }
-    public int describeContents() {
-        return 0;
+
+    private String name;
+    private String firstName;
+    private Long birthDate;
+    private String IDUL;
+
+    protected Profil(Parcel in) {
+        name = in.readString();
+        firstName = in.readString();
+        birthDate = in.readLong();
+        IDUL = in.readString();
+
     }
 
-    public static final Parcelable.Creator<Profil> CREATOR
-            = new Parcelable.Creator<Profil>() {
+    public static final Creator<Profil> CREATOR = new Creator<Profil>() {
+        @Override
         public Profil createFromParcel(Parcel in) {
             return new Profil(in);
         }
 
+        @Override
         public Profil[] newArray(int size) {
-            return new Prfil[size];
+            return new Profil[size];
         }
     };
 
-    public void writeToParcel(Parcel out, int flags) {
-        out.writeString(name);
-        out.writeString(firstName);
-        out.writeList(birthDate);
-        out.writeString(IDUL);
+    Profil(String name, String firstName, Long date, String IDUL) {
+        this.name = name;
+        this.firstName = firstName;
+        this.birthDate = date;
+        this.IDUL = IDUL;
     }
 
-    String name;
-    String firstName;
-    List birthDate;
-    String IDUL;
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(firstName);
+        dest.writeLong(birthDate);
+        dest.writeString(IDUL);
+
+
+    }
+
+    public Long getBirthDate() {
+        return birthDate;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getIDUL() {
+        return IDUL;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

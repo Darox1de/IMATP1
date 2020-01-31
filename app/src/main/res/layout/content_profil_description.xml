@@ -8,106 +8,98 @@
     tools:context=".ProfilDescription"
     tools:showIn="@layout/activity_profil_description">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_weight="1"
+        android:ems="10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Prénom:" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/firstNameInput"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="PUTENTRY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/Last_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/firstName"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                tools:text="@string/First_Name" />
+    <TextView
+        android:id="@+id/lastNameInput"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="21dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="PUT ENTRY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/firstNameInput"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:text="PUTENTRY" />
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="42dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/Date_de_naissance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/dateInput"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="42dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="putDATE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <TextView
+        android:id="@+id/IDUL"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="63dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:text="@string/IDUL"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/Name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:text="@string/Last_Name" />
-
-            <TextView
-                android:id="@+id/lastNameInput"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:text="PUT ENTRY" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/Date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:text="@string/Date_de_naissance" />
-
-            <TextView
-                android:id="@+id/dateInput"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:text="putDATE" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/IDUL"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:text="@string/IDUL" />
-
-            <TextView
-                android:id="@+id/inputIDUL"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="IDUL TO ENTER" />
-        </LinearLayout>
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/inputIDUL"
+        android:layout_width="168dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="63dp"
+        android:layout_weight="1"
+        android:ems="6"
+        android:text="IDUL TO ENTER"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
